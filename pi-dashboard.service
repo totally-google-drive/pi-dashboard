@@ -1,0 +1,21 @@
+[Unit]
+Description=Pi Dashboard - Raspberry Pi System Monitor
+After=network.target docker.service
+Requires=docker.service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/yoforduder/claud/pi-dashboard
+Environment="PATH=/home/yoforduder/claud/pi-dashboard/venv/bin:/usr/local/bin:/usr/bin:/bin"
+ExecStart=/home/yoforduder/claud/pi-dashboard/venv/bin/python /home/yoforduder/claud/pi-dashboard/app.py
+Restart=always
+RestartSec=10
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=pi-dashboard
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pi Dashboard - Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-bg-pattern"></div>
+        <div class="login-box">
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <i class="fas fa-raspberry"></i>
+                </div>
+                <div class="logo-glow"></div>
+            </div>
+            <h1>Pi Dashboard</h1>
+            <p class="login-subtitle">Raspberry Pi System Monitor</p>
+            <div class="error-message"></div>
+            <form onsubmit="return false;">
+                <div class="form-group">
+                    <label for="password"><i class="fas fa-lock"></i> Password</label>
+                    <input type="password" id="password" placeholder="Enter password" autocomplete="current-password">
+                </div>
+                <button class="btn" id="login-btn">
+                    <i class="fas fa-sign-in-alt"></i> Login
+                </button>
+            </form>
+            <p class="login-hint">Default password: <code>pi</code></p>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+    <script>
+        initLogin();
+    </script>
+</body>
+</html>
