@@ -345,8 +345,7 @@ Contributions are welcome! Please follow these guidelines:
 
 For issues and questions:
 
-- **GitHub Issues**: [Open an issue](https://github.com/yourusername/pi-dashboard/issues)
-- **Email**: your-email@example.com
+- **GitHub Issues**: [Open an issue](https://github.com/totally-google-drive/pi-dashboard/issues)
 
 ## 📄 License
 
@@ -364,7 +363,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 **Project**: Pi Dashboard
 **Version**: 1.0.0
-**Author**: Your Name
+**Author**: Totally-google-drive
 **License**: MIT
 
 🚀 **Happy Monitoring!** 🍓
